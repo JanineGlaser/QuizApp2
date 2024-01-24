@@ -1,0 +1,154 @@
+:root {
+  --color-background: rgb(117, 200, 175);
+  --color1: rgb(208, 224, 183);
+  --color2: rgb(51, 131, 129);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+button {
+  font-family: "Indie Flower", cursive;
+}
+
+html {
+  background-color: rgb(236, 244, 242);
+}
+body {
+  font-family: "Indie Flower", cursive;
+  background-color: var(--color-background);
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+  padding: 120px;
+}
+
+header,
+footer {
+  position: fixed;
+  width: 100%;
+  max-width: inherit;
+  color: var(--color1);
+  border: 5px solid var(--color1);
+  background-color: var(--color2);
+  z-index: 3;
+}
+
+header {
+  top: 0;
+}
+
+footer {
+  bottom: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.bookmark1:hover {
+  cursor: pointer;
+  /* transition time */
+  transition: 500ms ease-in-out;
+}
+
+.bookmark1 {
+  position: absolute;
+  right: -10px;
+  top: -5px;
+}
+
+.bookmark2 {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  display: none;
+}
+
+.card {
+  position: relative;
+  background-color: rgb(23, 78, 81);
+  /*innerer Abstand zu den Karten*/
+  padding: 25px;
+  /*äußerer Abstand zu den Karten*/
+  margin: 25px;
+  border-radius: 6px;
+  border: 2px solid rgb(234, 237, 202);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-question {
+  color: var(--color1);
+  align-self: center;
+}
+
+.card-button {
+  max-width: 200px;
+  align-self: center;
+  border-radius: 6px;
+  background-color: var(--color1);
+  color: var(--color2);
+  padding: 8px;
+}
+
+.card-button:hover {
+  color: rgb(10, 68, 63);
+  cursor: pointer;
+  transition: 500ms ease-in-out;
+}
+
+/*AUSGEBLENDET*/
+.card-answer-box {
+  background-color: yellow;
+  margin: 15px;
+  padding: 15px;
+  display: none;
+}
+
+.cardtags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0px 0px;
+  padding-top: 30px;
+}
+
+.cardtag:hover {
+  color: rgb(10, 68, 63);
+  cursor: pointer;
+  transition: 500ms ease-in-out;
+}
+.cardtag {
+  font-size: 12px;
+  text-decoration: none;
+  color: var(--color2);
+  background-color: rgb(243, 243, 196);
+  padding: 3px 10px;
+  border-radius: 6px;
+}
+
+.navbar-ul {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.nav-link {
+  color: var(--color1);
+  text-decoration: none;
+}
+.nav-link:hover {
+  color: rgb(10, 68, 63);
+  /* verändert sich zur Hand */
+  cursor: pointer;
+  /* transition time */
+  transition: 500ms ease-in-out;
+}
